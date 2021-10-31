@@ -25,6 +25,7 @@ body {
     left: 0;
 
     background-color: #eee;
+    border: 1px solid black;
 
     height: 100%;
     width: 300px;
@@ -34,7 +35,6 @@ body {
     padding: 15px 10px;
 
     width: 300px;
-    border-right: 1px solid black;
 
     text-align: center;
 }
@@ -43,12 +43,11 @@ body {
     list-style: none;
 
     padding: 0;
+    border-top: 1px solid black;
 
     height: 90%;
-    border: 1px solid black;
 
-    overflow-y: auto;
-    overflow-x: hidden;
+    overflow: auto;
 }
 
 #navbar li {
@@ -161,6 +160,8 @@ body {
     #navbar {
         position: absolute;
 
+        border: none;
+
         height: 260px;
         width: 100%;
         min-width: 350px;
@@ -172,6 +173,15 @@ body {
     }
 
     #navbar ul {
+        list-style: none;
+
+        padding: 0;
+
+        height: 250px;
+        width: 100%;
+
+        overflow: auto;
+
         background-color: #eee;
         border: 1px solid black;
     }
