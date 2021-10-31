@@ -1,0 +1,188 @@
+/* GLOBAL ======================================== */
+
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100%;
+
+    font-family: 'Poppins', sans-serif;
+}
+
+/* BODY ======================================== */
+
+.container {
+    margin: auto 0 auto 310px;
+    padding: 0 10px;
+}
+
+/* Navegation Bar */
+#navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+
+    background-color: #eee;
+
+    height: 100%;
+    width: 300px;
+}
+
+#navbar header {
+    padding: 15px 10px;
+
+    width: 300px;
+    border-right: 1px solid black;
+
+    text-align: center;
+}
+
+#navbar ul {
+    list-style: none;
+
+    padding: 0;
+
+    height: 90%;
+    border: 1px solid black;
+
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+
+#navbar li {
+    border: 1px solid black;
+}
+@media (min-width: 800px) {
+    #navbar li:hover {
+        border-right: 5px solid royalblue;
+    }
+}
+@media only screen and (max-width: 800px) {
+    #navbar li:hover {
+        border-bottom: 5px solid royalblue;
+    }
+}
+
+
+#navbar a {
+    padding: 15px 10px;
+
+    display: block;
+    
+    color: black;
+
+    text-decoration: none;
+}
+
+/* Sections */
+.main-section {
+    margin: 1.5rem 1rem;
+}
+
+.main-section h1 {
+    margin-bottom: 1rem;
+}
+
+.main-section p {
+    margin: 1rem auto;
+}
+
+.main-section li {
+    margin-bottom: 1rem;
+
+    font-style: italic;
+}
+
+.main-section code {
+    margin: 10px;
+    padding: 15px;
+
+    display: block;
+    align-items: center;
+
+    background-color: #eee;
+
+    white-space: pre-line;
+    text-align: left;
+    line-height: 1.5; 
+    
+    border-radius: 5px;
+}
+
+/* Footer */
+#footer {
+    margin: auto 0 auto 300px;
+    padding: 0.5rem 1rem;
+
+    background: #eee;
+
+    display: flex;
+
+    min-width: 350px;
+
+    justify-content: center;
+    align-items: center;
+
+    opacity: 0.6;
+
+    font-weight: 500;
+    font-size: 1rem;
+}
+
+#footer p {
+    text-align: center;
+}
+
+#footer a {
+    display: flex;
+
+    align-items: center;
+    gap: 0.2rem;
+    
+    font-weight: bold;
+    color: black;
+
+    text-decoration: none;
+}
+
+#linkedin-icon {
+    width: 1rem;
+}
+
+#footer a:hover > #linkedin-icon {
+    transform: scale(1.15);
+}
+
+/* MEDIA QUERIES ======================================== */
+
+@media only screen and (max-width: 800px) {
+    #navbar {
+        position: absolute;
+
+        height: 260px;
+        width: 100%;
+        min-width: 350px;
+    }
+    
+    #navbar header {
+        width: 100%;
+        text-align: center;
+    }
+
+    #navbar ul {
+        background-color: #eee;
+        border: 1px solid black;
+    }
+
+    .container {
+        margin: 20.5rem 0 auto 0;
+
+        min-width: 350px;
+    }
+
+    #footer {
+        margin: 0;
+    }
+}
