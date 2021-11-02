@@ -52,6 +52,8 @@ body {
 
 #navbar li {
     border: 1px solid black;
+  
+    transition: 0.15s ease-out;
 }
 @media (min-width: 800px) {
     #navbar li:hover {
@@ -111,49 +113,47 @@ body {
 }
 
 /* Footer */
-#footer {
-    margin: auto 0 auto 300px;
-    padding: 0.5rem 1rem;
-
-    background: #eee;
+.footer-container {
+    margin-left: 300px;
+    padding: 10px 10px;
 
     display: flex;
-
-    min-width: 350px;
+    flex-direction: column;
+    gap: 0.2rem;
 
     justify-content: center;
     align-items: center;
+  
+    background: #eee;
 
-    opacity: 0.6;
+/*     width: 100%; */
 
-    font-weight: 500;
-    font-size: 1rem;
-}
+    color: black;
 
-#footer p {
     text-align: center;
 }
 
-#footer a {
-    display: flex;
-
-    align-items: center;
-    gap: 0.2rem;
-    
-    font-weight: bold;
+.footer-container a {
     color: black;
-
     text-decoration: none;
+
+    transition: 0.5s ease-out;
 }
 
-#linkedin-icon {
-    width: 1rem;
+#footer-freecodecamp {
+    display: flex;
+    gap: 0.3rem;
+
+    border-bottom: 1px solid black;
+}
+#footer-freecodecamp a:hover {
+    transform: translateY(-5px);
+    text-shadow: 0 3px 3px royalblue;
 }
 
-#footer a:hover > #linkedin-icon {
-    transform: scale(1.15);
+#footer-user-link:hover {
+    transform: scale(1.05);
 }
-
 /* MEDIA QUERIES ======================================== */
 
 @media only screen and (max-width: 800px) {
@@ -192,7 +192,9 @@ body {
         min-width: 350px;
     }
 
-    #footer {
+    .footer-container {
         margin: 0;
+      
+        min-width: 350px;
     }
 }
